@@ -13,7 +13,6 @@ class SummernoteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        dd('howdy!');
         $this->loadViewsFrom(__DIR__ . "/Views", "summernote");
         //
     }
