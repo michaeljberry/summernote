@@ -13,6 +13,7 @@ class SummernoteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadMigrationsFrom(__DIR__ . "/Migrations");
         $this->loadViewsFrom(__DIR__ . "/Views", "summernote");
         //
     }
