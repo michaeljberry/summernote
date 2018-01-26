@@ -1,8 +1,9 @@
 @push('stylesheets')
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css">
+    <link rel="stylesheet" href="{{ asset('summernote/css/summernote.css') }}">
 @endpush
 @push('footscripts')
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <script src="{{ asset('summernote/js/summernote.min.js') }}"></script>
+    <script src="{{ asset('summernote/js/summernote-ext-highlight.js') }}"></script>
     <script>
         $(document).ready(function() {
             @component('summernote::setupSummernote')

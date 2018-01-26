@@ -13,6 +13,7 @@ class SummernoteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([__DIR__ . "/Assets" => public_path("summernote")], "public");
         $this->loadMigrationsFrom(__DIR__ . "/Migrations");
         $this->loadViewsFrom(__DIR__ . "/Views", "summernote");
         //
